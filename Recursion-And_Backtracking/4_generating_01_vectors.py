@@ -1,6 +1,6 @@
 def gen01(arr, index):
     if index == len(arr):
-        print(''.join(map(str, arr)))
+        print(*arr, sep='')
         return
         
     for i in range(2):
@@ -9,5 +9,5 @@ def gen01(arr, index):
 
 
 input_number = int(input())
-arr = [0 for i in range(input_number)]
+arr = [0] * input_number
 gen01(arr, 0)

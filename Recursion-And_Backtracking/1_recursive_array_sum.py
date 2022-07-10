@@ -5,5 +5,5 @@ def solution(arr, index):
     return arr[index] + solution(arr, index + 1)
 
 
-arr = list(map(int, input().split()))
+arr = [int(x) for x in input().split()]
 print(solution(arr, 0))

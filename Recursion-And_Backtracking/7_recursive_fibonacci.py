@@ -1,6 +1,7 @@
 '''
 With memorization
 '''
+
 fibonacci_memo = {}
 
 def get_fibonacci(n):
@@ -15,18 +16,3 @@ def get_fibonacci(n):
 
 input_number = int(input())
 print(get_fibonacci(input_number))
-
-
-'''
-Without memorization
-'''
-# # factorial_memo = {}
-# def factorial(k):
-#     factorial_memo = {}
-#     if k < 2: return 1
-#     if k not in factorial_memo:
-#         factorial_memo[k] = k * factorial(k-1)
-#     return factorial_memo[k]
-
-
-# print(factorial(4))
